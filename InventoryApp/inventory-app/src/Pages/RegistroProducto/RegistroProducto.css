@@ -1,0 +1,19 @@
+.container{
+    padding: 16px 8px 16px 8px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px 250px;
+}
+
+.item{
+    display: grid;
+    justify-content: start;
+    align-content: flex-end;
+}
+
+
+.subtitle{
+    padding: 16px 8px 8px 8px;
+    color: #448aff;
+    font-weight: bold;
+}
