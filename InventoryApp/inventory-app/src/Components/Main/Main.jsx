@@ -23,7 +23,7 @@ export default function Main() {
                     <Route path='/ReporteVenta' exact render={() => {
                         return <div> <Navbar /> <ReporteVenta/></div>
                     }} />
-                    <Route path="/login"  component={Login} />
+                    <Route path="/login" component={Login} />
                 </Switch>
             </Router>
         </div>
