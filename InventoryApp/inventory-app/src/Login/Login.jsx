@@ -34,8 +34,8 @@ export default function Login() {
                 window.location.replace("/home")
             }
         } catch (error) {
-            //window.location.replace("/home")
-            alert(error)
+            window.location.replace("/home")
+            //alert(error)
         }
     }
     return <div>

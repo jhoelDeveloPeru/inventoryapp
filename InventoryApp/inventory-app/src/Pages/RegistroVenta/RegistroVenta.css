@@ -1,12 +1,14 @@
-.container{
+.container-responsive{
     padding: 16px 8px 16px 8px;
     width: 100%;
     display: grid;
-    grid-template-columns: 250px 250px 250px 250px 250px;
+    grid-template-columns: repeat(auto-fill,minmax(min(100%,14rem),1fr));
 }
 
 .item{
+    margin-bottom: 8px;
     display: grid;
+    grid-template-rows: 1fr 1fr;
     justify-content: start;
     align-content: flex-end;
 }
@@ -25,3 +27,15 @@
 .btn-bar{
    justify-items:flex-end ;
 }
+
+.btn-round{
+    border-radius: 6px;
+}
+
+.btn-ctn{
+    direction: rtl;
+    padding-top: 0px !important;
+    padding-right: 16px;
+    margin-bottom: 24px !important;
+}
+

@@ -44,8 +44,34 @@ export default function RegistroProducto() {
 
     async function getProducts() {
         try {
-            const data = await axios.get('https://inventoryapis.azurewebsites.net/api/product/listado')
-            setProducts(data.data)
+            //const data = await axios.get('https://inventoryapis.azurewebsites.net/api/product/listado')
+
+            var prds = [{
+                Id: "1",
+                Code: "20784523",
+                Name: "Papel Bond A4 100Und",
+                Quantity:12
+            },
+            {
+                Id: "1",
+                Code: "20564389",
+                Name: "Cartulina Duplex M45",
+                Quantity:24
+            },
+            {
+                Id: "1",
+                Code: "20436478",
+                Name: "Lapicero Pilot 2 100Und",
+                Quantity:35
+            },
+            {
+                Id: "1",
+                Code: "20676745",
+                Name: "Compas Artesco M101",
+                Quantity:18
+            },
+        ]
+            setProducts(prds)
         } catch (error) {
             alert(error)
         }
@@ -105,18 +131,20 @@ export default function RegistroProducto() {
         <div>
             <div className="subtitle"><label>Productos</label></div>
             <div className="container">
-                <div>
+                <div className="item">
                     Código Producto:
                     <Input style={{ width: 200 }} placeholder="Ingrese Código" value={codeProduct} onChange={(e) => setCodeProduct(e.target.value)} />
                 </div>
-                <div >
+                <div className="item">
                     Nombre Producto:
                     <Input style={{ width: 200 }} placeholder="Ingrese Nombre de Producto" value={nameProduct} onChange={(e) => setNameProduct(e.target.value)} />
                 </div>
                 <div className="item">
+                    <label></label>
                     <Button style={{ width: 200 }} type="primary">Buscar</Button>
                 </div>
                 <div className="item">
+                    <label></label>
                     <Button style={{ width: 200 }} type="primary" ghost onClick={showModal}>Agregar</Button>
                 </div>
             </div>

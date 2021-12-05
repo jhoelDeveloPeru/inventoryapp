@@ -90,19 +90,20 @@ export default function ReporteVenta() {
         <div>
             <div className="subtitle"><label>Reporte de ventas</label></div>
             <div className="container">
-                <div>
+                <div className="item">
                     Fecha Inicio:
-                    <Input style={{ width: 200 }}/>
+                    <Input style={{ width: 200 }} value="04/12/2021"/>
                 </div>
-                <div >
+                <div className="item">
                     Fecha Fin:
-                    <Input style={{ width: 200 }}/>
+                    <Input style={{ width: 200 }} value="04/12/2021"/>
                 </div>
-                <div >
+                <div className="item">
                     Por Cliente:
                     <Input style={{ width: 200 }} placeholder="Ingrese Nombre de Cliente" />
                 </div>
                 <div className="item">
+                    <label></label>
                     <Button style={{ width: 200 }} type="primary" ghost>Buscar</Button>
                 </div>
             </div>
